@@ -2,6 +2,6 @@ version: '3.9'
 
 services:
   web:
-    image: "sanketshirke/node-app-demo:latest"
+    image: "sanketshirke/node-app:latest"
     ports:
       - "8000:8000"
