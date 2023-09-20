@@ -15,7 +15,7 @@ pipeline {
             }
             
         }
-        stage("Code Image push to docker hub "){
+        stage("Code Image "){
             steps{
                  withCredentials([usernamePassword(credentialsId:"dockerhub",passwordVariable:"dockerhubpass",usernameVariable:"dockerhubuser")]){
                   sh "docker login -u ${env.dockerhubuser} -p ${env.dockerhubpass}"
